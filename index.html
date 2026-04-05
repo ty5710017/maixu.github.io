@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/module.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 
@@ -83,24 +84,24 @@
     <div class="price-group">
         <div class="price-box">
             <span class="price-tag">月卡版</span>
-            <h3>豆芽麦序机器人</h3>
+            <h3>豆芽科技麦序机器人</h3>
             <div class="price">¥ 88</div>
             <p class="price-desc">稳定运行 | 售后无忧 | 对接作者 | 支持定制</p>
-            <a href="#contact" class="btn">联系客服购买</a>
+            <a onclick="openWx()" class="btn">联系客服购买</a>
         </div>
         <div class="price-box">
             <span class="price-tag">季卡版 · 热销</span>
-            <h3>豆芽麦序机器人</h3>
+            <h3>豆芽科技麦序机器人</h3>
             <div class="price">¥ 248</div>
             <p class="price-desc">性价比高 | 售后无忧 | 对接作者 | 支持定制</p>
-            <a href="#contact" class="btn">联系客服购买</a>
+            <a onclick="openWx()" class="btn">联系客服购买</a>
         </div>
         <div class="price-box">
-            <span class="price-tag">永久版 · 推荐</span>
-            <h3>豆芽麦序机器人</h3>
+            <span class="price-tag">年卡版 · 推荐</span>
+            <h3>豆芽科技麦序机器人</h3>
             <div class="price">¥ 588</div>
             <p class="price-desc">最划算 | 售后无忧 | 对接作者 | 支持定制</p>
-            <a href="#contact" class="btn">联系客服购买</a>
+            <a onclick="openWx()" class="btn">联系客服购买</a>
         </div>
     </div>
 
@@ -140,10 +141,9 @@
     <div class="contact" id="contact">
         <h3>📞 官方客服咨询</h3>
         <p>微信：<strong>kj99990</strong></p>
-        <p>QQ：<strong>1031565575</strong></p>
         <p>添加客服即可购买、咨询、获取售后支持</p>
         <br>
-        <button class="btn" id="copyWxBtn">复制微信号</button>
+        <button class="btn" style="margin-left:10px;background:#07c160" onclick="openWx()">打开微信添加</button>
     </div>
 
     <div class="advantage">
@@ -172,10 +172,21 @@
 
 <div id="backTop">↑</div>
 
+<div class="wx-modal" id="wxModal">
+    <div class="wx-box">
+        <button class="close-btn" onclick="closeWx()">×</button>
+        <div class="wx-title">扫码添加客服微信</div>
+        <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAESe3dpzSPS0oFKTYh_vAci6xSWswqJmQACYR0AAotIaVbS5f9X0UwwmjoE.jpg" alt="客服微信">
+        <div class="wx-tip">微信号：kj99990<br>长按识别 / 复制微信号添加</div>
+        <button class="wx-btn" onclick="copyWx()">复制微信号</button>
+    </div>
+</div>
+
 <script src="js/music.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/copy.js"></script>
 <script src="js/backtop.js"></script>
 <script src="js/script.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
