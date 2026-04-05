@@ -1,0 +1,226 @@
+/* 模块样式 - 已修复排版 */
+.advantage {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px 0 60px;
+}
+.adv-item {
+    text-align: center;
+    min-width: 140px;
+}
+.adv-item h4 {
+    color: var(--primary);
+    font-size: 16px;
+    margin-top: 10px;
+}
+.adv-item p {
+    color: var(--subtext);
+    font-size: 13px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+.card {
+    background: var(--light);
+    padding: 35px 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(0,228,255,0.12);
+    transition: 0.4s;
+    animation: cardFlipUp 1.3s ease-out backwards;
+}
+.card:hover {
+    border-color: var(--primary);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 18px 45px rgba(0,228,255,0.25);
+    background: #1b2438;
+}
+.card-icon {
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.card h3 {
+    color: var(--primary);
+    font-size: 20px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+.card:hover h3 {
+    transform: translateX(6px);
+    text-shadow: 0 0 10px rgba(0,228,255,0.4);
+}
+.card p {
+    color: var(--subtext);
+    font-size: 15px;
+}
+
+/* ======================
+   🔥 这里修复了套餐排版
+   ====================== */
+.price-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 25px;
+}
+.price-box {
+    background: var(--light);
+    padding: 45px 30px;
+    border-radius: 22px;
+    text-align: center;
+    border: 1px solid rgba(0,228,255,0.25);
+    box-shadow: 0 0 40px rgba(0,228,255,0.12);
+    transition: 0.3s;
+    animation: priceFloat 1.5s ease-out;
+}
+.price-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 60px rgba(0,228,255,0.25);
+}
+.price-tag {
+    background: rgba(0,228,255,0.1);
+    color: var(--primary);
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.price {
+    font-size: 46px;
+    color: var(--primary);
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0,228,255,0.4);
+    animation: pricePulse 1.8s infinite alternate;
+}
+.price-desc {
+    color: var(--subtext);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.reviews { margin-top: 60px; }
+.review-box {
+    background: var(--light);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--primary);
+}
+.review-text { font-style: italic; }
+.review-name { color: var(--primary); font-size: 14px; }
+
+.notice {
+    background: var(--light);
+    padding: 35px 30px;
+    border-radius: 18px;
+    margin-top: 50px;
+    border: 1px solid rgba(0,228,255,0.12);
+    animation: slideInRight 1.6s ease-out;
+}
+.notice h3 {
+    color: var(--primary);
+    font-size: 21px;
+    margin-bottom: 22px;
+}
+.notice li {
+    margin-left: 22px;
+    margin-bottom: 10px;
+    color: var(--subtext);
+    font-size: 15px;
+    animation: listFade 0.5s ease-out backwards;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 30px;
+    background: var(--light);
+    border-radius: 22px;
+    margin-top: 40px;
+    border: 1px solid rgba(0,228,255,0.18);
+    transition: 0.3s;
+    animation: fadeZoom 1.8s ease-out;
+}
+.contact:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,228,255,0.2);
+}
+.contact h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: var(--primary);
+    animation: contactWave 2s infinite alternate;
+}
+.contact p {
+    font-size: 17px;
+    color: var(--subtext);
+}
+.contact strong {
+    color: #fff;
+    font-size: 19px;
+}
+
+/* 加微信弹窗样式 */
+.wx-modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    z-index:9999;
+    align-items:center;
+    justify-content:center;
+}
+.wx-box{
+    width:85%;
+    max-width:320px;
+    background:#fff;
+    border-radius:12px;
+    padding:25px 20px;
+    text-align:center;
+    position:relative;
+}
+.wx-box img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+.wx-title{
+    font-size:16px;
+    color:#333;
+    margin-bottom:10px;
+}
+.wx-tip{
+    font-size:14px;
+    color:#666;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+.wx-btn{
+    padding:12px 24px;
+    background:#07c160;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+.close-btn{
+    position:absolute;
+    top:12px;
+    right:15px;
+    font-size:20px;
+    color:#666;
+    cursor:pointer;
+    background:none;
+    border:none;
+}
