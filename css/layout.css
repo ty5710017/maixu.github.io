@@ -178,3 +178,59 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
+/* 招收代理 样式 */
+.agent {
+    margin: 50px 0;
+    padding: 40px 30px;
+    background: rgba(22, 28, 44, 0.7);
+    border-radius: 14px;
+    border: 1px solid rgba(90, 120, 200, 0.2);
+    text-align: center;
+}
+.agent h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.agent h2 span {
+    color: #409eff;
+}
+.agent-desc {
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.agent-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.agent-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 260px;
+    padding: 25px 20px;
+    background: rgba(30, 38, 59, 0.6);
+    border-radius: 12px;
+}
+.agent-card h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.agent-card p {
+    color: #bbb;
+    font-size: 14px;
+}
+.agent-btn {
+    padding: 12px 35px;
+    background: linear-gradient(90deg, #409eff, #587cff);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
