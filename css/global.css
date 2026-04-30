@@ -1,0 +1,36 @@
+:root {
+    --primary: #00e4ff;
+    --secondary: #0099ff;
+    --dark: #090e17;
+    --light: #161d2d;
+    --text: #f1f5f9;
+    --subtext: #94a3b8;
+}
+
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    line-height: 1.8;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 4%;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.title span {
+    background: linear-gradient(90deg, #00e4ff, #0099ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
